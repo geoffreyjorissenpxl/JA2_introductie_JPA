@@ -16,6 +16,7 @@ public class Demo4EntityManager {
 		Message dbMessage = entityManager.find(Message.class, memMessage.getId());
 		entityManager.close();
 		System.out.println(pos + ":" + memMessage.getText() + "\t" + ((dbMessage != null) ? dbMessage.getText() : "not available"));
+
 	}
 
 	public static void main(String[] args) {
